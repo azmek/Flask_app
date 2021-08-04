@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+        <h1> Dataset you are looking for</h1>
+        <h2>you are stupid computer</h2>
+        
+        
+        <table class="table">
+
+            {% for key, value in items.items() %}
+            <tr class="table__row">
+                
+                <td class="table__cell">
+                    {{ key }}
+                </td>
+                <td>
+                {{ value }}
+                </td>
+                
+            </tr>
+            {% endfor %}
+
+        </table> 
+        
+        {% endblock %}

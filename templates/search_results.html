@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+        <h1> Dataset you are looking for</h1>
+        
+        
+        <table class="table">
+            <tr class="table__header">
+                {% for header in headings %}
+                    <th class="table__cell">{{ header }}</th>
+                {% endfor %}
+            </tr>
+            {% for item in data %}
+            <tr class="table__row">
+                
+                <td class="table__cell">
+                    {{ item['1. symbol'] }}
+                  
+                <a href="additional_details/{{ item['1. symbol'] }}">More Details</a>
+            
+                </td>
+                <td>
+                    
+                </td>
+                <td>
+                {{ item['2. name'] }}
+                </td>
+                
+            </tr>
+            {% endfor %}
+
+        </table> 
+        
+        {% endblock %}

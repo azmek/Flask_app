@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+
+  
+ 
+      <h1>Welcome to my humble abode, bring your own API key</h1>
+      <p class="fs-5 col-md-8">To get started and use this web app, you will need to get your own API key</p>
+    <div class="row g-5">
+        <div class="col-md-6">
+
+        <a href="https://www.alphavantage.co/" class="btn btn-primary btn-lg px-4">Get your free API</a>
+      </div>
+      <div class="col-md-6">
+        <a href="welcome" class="btn btn-success btn-lg px-4">Get Started</a>
+      </div>
+      
+  </div>
+  <hr class="col-8 col-md-2 mb-5">
+  <form action="" method="POST">
+    Your API key: <input type="text" name="user_key">
+    <input type="submit">
+    </form>
+      
+
+
+      
+ {% endblock %}
